@@ -25,42 +25,26 @@ body {
     font-size: 12px;
 }
 
-.top-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .top-nav-links a {
     color: white;
     text-decoration: none;
     margin-right: 15px;
     font-size: 11px;
-}
 
+}
+.top-nav-links{
+    text-align: right;
+}
 .top-nav-links a:hover {
     text-decoration: underline;
 }
 
-.search-area {
-    display: flex;
-    align-items: center;
-}
-
-.search-area input {
-    padding: 4px 8px;
-    border: none;
-    font-size: 11px;
-    margin-right: 5px;
-}
-
-.search-area button {
-    background-color: #666;
-    color: white;
-    border: none;
-    padding: 4px 8px;
-    cursor: pointer;
-    font-size: 11px;
+.search-bar{
+    /* display: flex; */
+    gap: 4px;
+    margin-top: 2px;
+    float: right; 
 }
 
 /* Main Header */
@@ -109,6 +93,8 @@ body {
     padding-right: 100px;
     position: relative;
     overflow: hidden;
+    
+    
 }
 
 .hero-image {

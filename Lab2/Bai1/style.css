@@ -1,0 +1,158 @@
+/* Custom CSS for Seattle University Bootstrap Theme */
+
+/* Custom color variables */
+:root {
+    --su-red: #8b0000;
+    --su-red-hover: #a00;
+    --su-light-red: #ffcccc;
+}
+
+/* Top Navigation Custom Styling */
+.top-nav {
+    background-color: var(--su-red);
+    color: white;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+.top-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.top-nav-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Main Header Custom Styling */
+.main-header {
+    background-color: var(--su-red);
+}
+
+.navbar-brand h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Hero Banner Custom Styling */
+.hero-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    z-index: 2;
+}
+
+.hero-content {
+    z-index: 3;
+}
+
+.hero-content h2 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Sidebar Custom Styling */
+.sidebar .list-group-item {
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar .list-group-item:hover {
+    background-color: #777;
+}
+
+.sidebar .list-group-item.active {
+    background-color: var(--su-red) !important;
+    border-color: var(--su-red) !important;
+}
+
+.sidebar .list-group-item.active:hover {
+    background-color: var(--su-red) !important;
+}
+
+/* Card Header Custom Styling */
+.card-header {
+    background-color: var(--su-red) !important;
+}
+
+/* SU Red Background Class */
+.su-red-bg {
+    background-color: var(--su-red) !important;
+}
+
+/* Apply Section Link Hover */
+.card-body a:hover {
+    background-color: #f9f9f9;
+}
+
+/* Footer Styling */
+.main-footer {
+    background-color: var(--su-red);
+}
+
+/* Footer Link Hover */
+.main-footer a:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+/* Custom responsive adjustments */
+@media (max-width: 768px) {
+    .hero-banner .ratio {
+        max-height: 280px !important;
+    }
+    
+    .hero-content h2 {
+        font-size: 3rem !important;
+    }
+    
+    .top-nav .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .top-nav-links {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-banner .ratio {
+        max-height: 220px !important;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.2rem !important;
+    }
+    
+    .navbar-brand h1 {
+        font-size: 18px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 11px;
+    }
+}
