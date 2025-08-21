@@ -7,6 +7,37 @@
     --su-light-red: #ffcccc;
 }
 
+/* Boxed Layout Styling */
+body {
+    background-color: #8b0000;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.boxed-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Responsive adjustments for boxed layout */
+@media (max-width: 1240px) {
+    .boxed-wrapper {
+        margin: 0 20px;
+        max-width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .boxed-wrapper {
+        margin: 0 10px;
+        max-width: calc(100% - 20px);
+    }
+}
+
 /* Top Navigation Custom Styling */
 .top-nav {
     background-color: var(--su-red);
@@ -136,6 +167,11 @@
     
     .top-nav-links {
         text-align: center;
+    }
+    
+    .boxed-wrapper {
+        margin: 0 5px;
+        max-width: calc(100% - 10px);
     }
 }
 

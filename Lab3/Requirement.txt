@@ -1,0 +1,15 @@
+Tạo ô nhập:
+nhập họ tên
+ngày tháng năm sinh
+Giới tính tích chọn nam or nữ
+quê quán
+
+Và nút 'Thêm' bên cạnh
+
+có 1 bảng:
+stt | họ tên   | NTNS     | Giới tính | Quê quán | Xóa | Sửa
+1   | Nguyễn A | 1/1/2005 | Nam       | Thanh Hóa| X   | O 
+
+
+Nhấn xóa thì xóa khỏi bảng, sửa thì trở thành có thể chọn để sửa
+dùng bootstyrap và thao tác dữ liệu bằng dom
