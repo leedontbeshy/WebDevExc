@@ -62,7 +62,6 @@ function themThongTin() {
         dangSua = false;
         viTriSua = -1;
         
-
         let nutThem = document.querySelector('button[onclick="themThongTin()"]');
         nutThem.textContent = 'Thêm';
         nutThem.className = 'btn btn-primary';
